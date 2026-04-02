@@ -48,6 +48,18 @@ It uses **TF-IDF Vectorization** and **Cosine Similarity** to recommend products
 ### 📊 API Docs
 <img src="screenshots/API1.png" width="800"/>
 <img src="screenshots/API2.png" width="800"/>
+## 🌐 Live Demo Preview
+
+### 🏠 Home Page (Live)
+<img src="page.png" width="900"/>
+<img src="live.png" width="900"/>
+
+🔗 https://amazon-sports-recommendation.onrender.com
+
+### 📊 API Documentation (FastAPI Swagger)
+<img src="livedocs.png" width="900"/>
+
+🔗 https://amazon-sports-recommendation.onrender.com/docs
 
 
 ## 🏗️ Project Structure
