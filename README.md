@@ -1,42 +1,130 @@
-# SportIQ — Amazon Sports Recommendation Engine
+<!-- 🔥 Animated Header -->
+<h1 align="center">🚀 SportIQ</h1>
+<h3 align="center">Amazon Sports Recommendation Engine</h3>
 
-A high-performance recommendation engine built with **FastAPI** and **scikit-learn**, using **TF-IDF Vectorization** and **Cosine Similarity** to suggest relevant sports products based on historical data.
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?size=22&duration=3000&color=00BFFF&center=true&vCenter=true&width=600&lines=AI+Powered+Recommendation+System;FastAPI+%7C+Machine+Learning+%7C+NLP;Built+by+Harika+Satti" />
+</p>
 
-## Project Structure
-- `app.py` — FastAPI backend.
-- `recommendation.py` — Core ML logic for similarity analysis.
-- `index.html` — Premium animated UI for exploring recommendations.
-- `Sports-Amazon dataset.csv` — The core dataset.
+## 🏷️ Badges
 
-## Quick Start
+<p align="center">
+  <img src="https://img.shields.io/badge/Live-Demo-green?style=for-the-badge&logo=render" />
+  <img src="https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python" />
+  <img src="https://img.shields.io/badge/FastAPI-Backend-teal?style=for-the-badge&logo=fastapi" />
+  <img src="https://img.shields.io/badge/Deployed%20on-Render-black?style=for-the-badge&logo=render" />
+</p>
 
-### 1. Install Dependencies
-```bash
+<p align="center">
+  🔗 <b>Live App:</b> https://your-app.onrender.com
+</p>
+
+## ✨ Overview
+
+**SportIQ** is a high-performance recommendation engine that delivers **personalized sports product suggestions** using **NLP and Machine Learning**.
+
+It uses **TF-IDF Vectorization** and **Cosine Similarity** to recommend products based on content similarity.
+
+
+## 🎯 Features
+
+- 🔍 Smart Content-Based Recommendations  
+- ⚡ FastAPI High-Speed Backend  
+- 🧠 NLP-based Similarity Engine  
+- 📊 Real-time Product Insights  
+- 🎨 Interactive UI with animations  
+- 🟢 Demo Mode support  
+
+## 🖼️ Screenshots
+
+### 🏠 Home Page
+<img src="screenshots/dashboard1.png" width="800"/>
+<img src="screenshots/dashboard2.png" width="800"/>
+
+### 🎯 Recommendations
+<img src="screenshots/result1.png" width="800"/>
+<img src="screenshots/result2.png" width="800"/>
+
+### 📊 API Docs
+<img src="screenshots/API1.png" width="800"/>
+<img src="screenshots/API2.png" width="800"/>
+
+
+## 🏗️ Project Structure
+
+SportIQ/
+│
+├── app.py
+├── recommendation.py
+├── index.html
+├── requirements.txt
+├── Sports-Amazon dataset.csv
+
+
+## ⚙️ Tech Stack
+
+- **Backend:** FastAPI  
+- **ML:** scikit-learn  
+- **Data:** pandas, numpy  
+- **NLP:** TF-IDF  
+- **Similarity:** Cosine Similarity  
+
+## 🚀 Getting Started
+
+### Install Dependencies
+
+bash
 pip install -r requirements.txt
-```
 
-### 2. Run the Backend
-```bash
+### Run Backend
+
+bash
 python app.py
-```
-- API Docs: [http://localhost:8000/docs](http://localhost:8000/docs)
 
-### 3. Open the UI
-Open `index.html` in any modern web browser.
-- The UI will automatically connect to the backend if it's running (indicated by a blue "API LIVE" badge).
-- If the backend is offline, the app runs in Demo Mode with built-in data.
+📍 API: http://localhost:8000  
+📘 Docs: http://localhost:8000/docs  
 
-## API Endpoints
+## 📡 API Endpoints
+| Method | Endpoint | Description |
+|--------|----------|------------|
+| GET | /products | Get all products |
+| GET | /stats | Dataset insights |
+| GET | /recommend/{id} | Recommendations |
+| GET | /search?q= | Search |
 
-| Method | Path | Description |
-|--------|------|-------------|
-| GET | `/products` | Lists all unique product IDs. |
-| GET | `/stats` | Analytics about categories, brands, and ratings. |
-| GET | `/recommend/{product_id}` | Content-based recommendations for a specific product. |
-| GET | `/search?q=query` | Fast keyword search across IDs, brands, and sports. |
+## 🧠 How It Works
 
-## How it Works
-1. **Data Preprocessing**: Loads Amazon sports product data and combines key features into an *item profile*.
-2. **Vectorization**: Uses `TfidfVectorizer` to convert text descriptions into mathematical vectors.
-3. **Similarity**: Calcluates `Cosine Similarity` between vectors to find products with the most similar profiles.
-4. **Ranking**: Returns the top $N$ most similar products with a confidence score.
+- Combines product features (title, category, brand)  
+- Converts text → vectors using TF-IDF  
+- Computes similarity using cosine distance  
+- Returns top-N recommendations  
+
+## 📊 Sample Output
+json
+{
+  "product_id": "SP123",
+  "recommendations": [
+    {"id": "SP456", "score": 0.87},
+    {"id": "SP789", "score": 0.82}
+  ]
+}
+## 🌐 Deployment
+
+Deployed on **Render**
+
+bash
+gunicorn app:app
+
+## 💡 Future Enhancements
+
+- 🔮 Hybrid Recommendation System  
+- 🤖 Deep Learning (BERT)  
+- 📱 Mobile Optimization  
+- 👤 User Personalization  
+
+## 👩‍💻 Author
+
+**Harika Satti**  
+Aspiring Data Scientist 🚀  
+
+⭐ If you like this project, give it a star!
